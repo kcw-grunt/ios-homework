@@ -8,5 +8,5 @@ Using the [Giphy API](https://github.com/Giphy/GiphyAPI), implement a gif search
 
 ## Structure
 
-Do not use interface builder to make this app. If you want to complete this project using React Native then that is also an option. This app should work with iOS 9+.
+Do not use interface builder to make this app. Use Swift or Objective C, third party framerworks (masonry etc) are also allowed. Alternatively if you want to complete this project in Javascript using React Native then that is also an option. This app should work with iOS 9+.
 
