@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0047406DED211475D114498059B5625A /* GPHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A6060733AB76D96AAADCC48DDF72D3 /* GPHUser.swift */; };
+		037FADB198C4280550FB9A311C651D50 /* GiphyCoreSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5AB76EC730FB965EF2889A540A0D3 /* GiphyCoreSDK-dummy.m */; };
+		0E452192359891D833C1C1DDDED890EC /* GPHTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2AE4F48F459B75F427EB43DF3EE2B /* GPHTypes.swift */; };
+		0E4A2273EB8C1925AAB873D52B8399DB /* GPHMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616F153941CE80E311F06B302E21EC8 /* GPHMedia.swift */; };
+		0F2C00D9580F96C48A7CED64081F8E90 /* GPHListTermSuggestionRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733DBB76B1D758D2D82D506ED9C74F6 /* GPHListTermSuggestionRespose.swift */; };
+		1A6368F349A3BC37263F52D5DB25431E /* GPHNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576238DD87C3BBC2ABD29C51AE5A5B7 /* GPHNetworkReachability.swift */; };
+		1C0E06E543F2F63122A665BE91768D54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1C536703416D113FDDD21D0AA0917641 /* GPHMediaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2120A44D70113159AD5A676B1C73FE /* GPHMediaResponse.swift */; };
+		28197A31D311E3CB645C18FEFA0D5EF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3068B50F0C2DDC3F666C429838CCF930 /* Pods-Eaze-iOS-HomeworkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DBB13F599BD60529691999905BC5CA /* Pods-Eaze-iOS-HomeworkTests-dummy.m */; };
+		42554B59E48EFDF7F50CCC889E3CCB75 /* Pods-Eaze-iOS-Homework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FAD5D5BC56DBDA2E3FE6894E115100 /* Pods-Eaze-iOS-Homework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FEF5C8C7806CBDABBB0E1FD2E9F86E /* GPHAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEEC6B920F164F06BC41AFF3F2D1F4D /* GPHAsyncOperation.swift */; };
+		551C96B97E11DE57A0D42D7E09A2E0B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		594E6C32ABA5C0993B30B415AC64ED4B /* Pods-Eaze-iOS-HomeworkUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 439EBF989F5682CB1607A4BE82FF355A /* Pods-Eaze-iOS-HomeworkUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76F8E4DBCD923D0F9C4E6B5E2C6ABDD1 /* GPHListCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCAADEB624C6311BC49B0C76C4B45D /* GPHListCategoryResponse.swift */; };
+		7D74BF99EE680BDC0EE3856AA30623C8 /* GPHImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE91C9A65494DF96BCC4F77BFC92C492 /* GPHImages.swift */; };
+		7F2EBC1C1889E18264138A989F82C1BB /* Pods-Eaze-iOS-HomeworkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEA528B0EC1FB820B7B1BD98F79B11B /* Pods-Eaze-iOS-HomeworkUITests-dummy.m */; };
+		7F338875619F7C37DFBAB683BD726AED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		89A4C360DA660E21E7C7348BD358FBCA /* GPHPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DFAE2C33DDD9BC4B6B996A95B004E /* GPHPagination.swift */; };
+		8A0DEDD55B0AB096FFAF8D36C0FE2DCB /* GPHTermSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CECA5768BCD55688A744BA4F9E84A /* GPHTermSuggestion.swift */; };
+		92E1F80B98D3A01D35A1BAAB40B33915 /* GPHAbstractClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F25E4042F1CB488C835A67B78A02F /* GPHAbstractClient.swift */; };
+		AD9FCBBB7AA260C4D4E1F6923302EE3E /* Pods-Eaze-iOS-Homework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C41C3AAD42F8814101505C87542A52FD /* Pods-Eaze-iOS-Homework-dummy.m */; };
+		AE53DED47DF64B38FD14061FCFB693A1 /* Pods-Eaze-iOS-HomeworkTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41ABA871897BBAAFB2D350B7EB4ED1E7 /* Pods-Eaze-iOS-HomeworkTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22CFC17ABD978058F2DB368E2D3DAE8 /* GPHMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFD8BFB74F5C1E8A784DA0555BCB0E /* GPHMeta.swift */; };
+		B25B1A9C01022964C916DEDBEA2848A5 /* GPHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF638B5AE9C0FC7DBC1A5DC905756D9 /* GPHError.swift */; };
+		C4852F759796B2708CDD158967AC727B /* GPHListMediaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8558C3C0F4B4879EF7DAD720FFFE136 /* GPHListMediaResponse.swift */; };
+		CC93F020DBFA5441AB741597078D4736 /* GPHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B01A4E1D980D7DF3E0809B45486146 /* GPHRequest.swift */; };
+		D2FCD1310905154E9192A188F0C7A91F /* GPHClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A302E40D1FD222152DBF5DF3EF4F8FE /* GPHClient.swift */; };
+		D72A820ADD7D753F30085ED1A773D183 /* GPHImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E890A881CCCB5C5084D14560843C2 /* GPHImage.swift */; };
+		EBBBA5D64375D79EB025A488D8078A35 /* GPHResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9ECBD0B2274F88C17B32BABBF15255 /* GPHResponse.swift */; };
+		F593DFCBEA4A15C6DF234BB1A0F223BC /* GPHCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38197D9DCE49F1B5716E9D0FC9F7D3F /* GPHCategory.swift */; };
+		F5E3A50E6438374C643D1805269D8D2B /* GPHMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DA670A098A75441A958A8E26D8BE2 /* GPHMappable.swift */; };
+		F807C99C0D4B8AD52A289DB151D4F5C6 /* GiphyCoreSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A57BF8CB482E12B67682D32BDE4076 /* GiphyCoreSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0833CC8EB5AED7D0E0097BF67469D755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D620067E34ED8472940E23C403420BD3;
+			remoteInfo = GiphyCoreSDK;
+		};
+		4CE63710F00C798612B2040E70CE5470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D620067E34ED8472940E23C403420BD3;
+			remoteInfo = GiphyCoreSDK;
+		};
+		6F5A987567F9F1C6C3B6FC9AD426FD1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D620067E34ED8472940E23C403420BD3;
+			remoteInfo = GiphyCoreSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098177E5FD075A6D19D7DC2D25CE8925 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-HomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16FD72C32275F8EBD37CB10A14900EAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218928C3CD46505EAAFF3AC5B1AC2914 /* Pods-Eaze-iOS-Homework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Eaze-iOS-Homework.modulemap"; sourceTree = "<group>"; };
+		2AF9E36EAA13446BF75D3441ED7986DF /* GiphyCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GiphyCoreSDK.framework; path = GiphyCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF5AB76EC730FB965EF2889A540A0D3 /* GiphyCoreSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GiphyCoreSDK-dummy.m"; sourceTree = "<group>"; };
+		305DFAE2C33DDD9BC4B6B996A95B004E /* GPHPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHPagination.swift; path = Source/GPHPagination.swift; sourceTree = "<group>"; };
+		313DA670A098A75441A958A8E26D8BE2 /* GPHMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHMappable.swift; path = Source/GPHMappable.swift; sourceTree = "<group>"; };
+		40C8C7407D30C75512ED4ACB9DD8715B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41ABA871897BBAAFB2D350B7EB4ED1E7 /* Pods-Eaze-iOS-HomeworkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eaze-iOS-HomeworkTests-umbrella.h"; sourceTree = "<group>"; };
+		439EBF989F5682CB1607A4BE82FF355A /* Pods-Eaze-iOS-HomeworkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eaze-iOS-HomeworkUITests-umbrella.h"; sourceTree = "<group>"; };
+		4616F153941CE80E311F06B302E21EC8 /* GPHMedia.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHMedia.swift; path = Source/GPHMedia.swift; sourceTree = "<group>"; };
+		4942B2232279B3964C78581745F3031F /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC0029E0073834CA4A9EC98B6C1CCC2 /* GiphyCoreSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GiphyCoreSDK.xcconfig; sourceTree = "<group>"; };
+		51F45C751A3FB3FAC15D47E59AC224CD /* Pods-Eaze-iOS-Homework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eaze-iOS-Homework-acknowledgements.plist"; sourceTree = "<group>"; };
+		53C797FF4C6545623B5C9D77AE25EDFC /* Pods-Eaze-iOS-HomeworkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eaze-iOS-HomeworkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5733DBB76B1D758D2D82D506ED9C74F6 /* GPHListTermSuggestionRespose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHListTermSuggestionRespose.swift; path = Source/GPHListTermSuggestionRespose.swift; sourceTree = "<group>"; };
+		5947340C8359E21BDA0161777FE18616 /* Pods-Eaze-iOS-HomeworkTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-HomeworkTests-resources.sh"; sourceTree = "<group>"; };
+		5C2120A44D70113159AD5A676B1C73FE /* GPHMediaResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHMediaResponse.swift; path = Source/GPHMediaResponse.swift; sourceTree = "<group>"; };
+		5D025451B82685CC4770330E51FAF79F /* Pods-Eaze-iOS-Homework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eaze-iOS-Homework-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61A9F307C35D8729D2EF294AB869F090 /* Pods_Eaze_iOS_HomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eaze_iOS_HomeworkUITests.framework; path = "Pods-Eaze-iOS-HomeworkUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69CD3ED9ADCB2F74AFCB9A014726BE62 /* Pods-Eaze-iOS-HomeworkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-HomeworkUITests-resources.sh"; sourceTree = "<group>"; };
+		6BCD4F037DA9CCD69792B99614BC830C /* Pods-Eaze-iOS-HomeworkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eaze-iOS-HomeworkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		78156666900BDE71C60D31B67EC26BD2 /* Pods_Eaze_iOS_HomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eaze_iOS_HomeworkTests.framework; path = "Pods-Eaze-iOS-HomeworkTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CCAADEB624C6311BC49B0C76C4B45D /* GPHListCategoryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHListCategoryResponse.swift; path = Source/GPHListCategoryResponse.swift; sourceTree = "<group>"; };
+		7B7E0CCF65D057FFF5A82EC80892FEAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A6060733AB76D96AAADCC48DDF72D3 /* GPHUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHUser.swift; path = Source/GPHUser.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A302E40D1FD222152DBF5DF3EF4F8FE /* GPHClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHClient.swift; path = Source/GPHClient.swift; sourceTree = "<group>"; };
+		9C2E890A881CCCB5C5084D14560843C2 /* GPHImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHImage.swift; path = Source/GPHImage.swift; sourceTree = "<group>"; };
+		9D8D9A6B9987D825ACDBFC86EF5374BB /* Pods-Eaze-iOS-HomeworkUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-HomeworkUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A4DBB13F599BD60529691999905BC5CA /* Pods-Eaze-iOS-HomeworkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eaze-iOS-HomeworkTests-dummy.m"; sourceTree = "<group>"; };
+		AF6D00B2B904334DD79CC1EA0994C59D /* Pods-Eaze-iOS-Homework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-Homework-resources.sh"; sourceTree = "<group>"; };
+		B2A57BF8CB482E12B67682D32BDE4076 /* GiphyCoreSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GiphyCoreSDK-umbrella.h"; sourceTree = "<group>"; };
+		B7B01A4E1D980D7DF3E0809B45486146 /* GPHRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHRequest.swift; path = Source/GPHRequest.swift; sourceTree = "<group>"; };
+		BA48883F8DED2E07BA7AA53E9316A613 /* GiphyCoreSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GiphyCoreSDK.modulemap; sourceTree = "<group>"; };
+		BC2CECA5768BCD55688A744BA4F9E84A /* GPHTermSuggestion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHTermSuggestion.swift; path = Source/GPHTermSuggestion.swift; sourceTree = "<group>"; };
+		BD9ECBD0B2274F88C17B32BABBF15255 /* GPHResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHResponse.swift; path = Source/GPHResponse.swift; sourceTree = "<group>"; };
+		C41C3AAD42F8814101505C87542A52FD /* Pods-Eaze-iOS-Homework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eaze-iOS-Homework-dummy.m"; sourceTree = "<group>"; };
+		C4FC67184930C9E3A6C96207C3C912B5 /* Pods-Eaze-iOS-HomeworkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eaze-iOS-HomeworkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6FAD5D5BC56DBDA2E3FE6894E115100 /* Pods-Eaze-iOS-Homework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eaze-iOS-Homework-umbrella.h"; sourceTree = "<group>"; };
+		C8558C3C0F4B4879EF7DAD720FFFE136 /* GPHListMediaResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHListMediaResponse.swift; path = Source/GPHListMediaResponse.swift; sourceTree = "<group>"; };
+		C8891BA807B01CE4633736ACD529FACD /* Pods-Eaze-iOS-HomeworkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eaze-iOS-HomeworkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C99BBEB64493B1C31DB7C7F0F4666ED2 /* Pods_Eaze_iOS_Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eaze_iOS_Homework.framework; path = "Pods-Eaze-iOS-Homework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC1198487D9238813CD131386167B91 /* Pods-Eaze-iOS-HomeworkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Eaze-iOS-HomeworkTests.modulemap"; sourceTree = "<group>"; };
+		D0C2AE4F48F459B75F427EB43DF3EE2B /* GPHTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHTypes.swift; path = Source/GPHTypes.swift; sourceTree = "<group>"; };
+		D1182667116DD541B6AC0BDD36A82F94 /* Pods-Eaze-iOS-HomeworkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-HomeworkTests-frameworks.sh"; sourceTree = "<group>"; };
+		DBAE1AD8370A3A4A2E745087B7786FBE /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0571DA55653ABFF8CFA82210B0C70A /* Pods-Eaze-iOS-HomeworkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Eaze-iOS-HomeworkUITests.modulemap"; sourceTree = "<group>"; };
+		DF9F1F111706B2BA4A7EB107F1ACD3E4 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-HomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DFF638B5AE9C0FC7DBC1A5DC905756D9 /* GPHError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHError.swift; path = Source/GPHError.swift; sourceTree = "<group>"; };
+		E576238DD87C3BBC2ABD29C51AE5A5B7 /* GPHNetworkReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHNetworkReachability.swift; path = Source/GPHNetworkReachability.swift; sourceTree = "<group>"; };
+		E57A8E399CFC8E05A062F07911310BC9 /* Pods-Eaze-iOS-Homework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eaze-iOS-Homework-frameworks.sh"; sourceTree = "<group>"; };
+		E72F25E4042F1CB488C835A67B78A02F /* GPHAbstractClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHAbstractClient.swift; path = Source/GPHAbstractClient.swift; sourceTree = "<group>"; };
+		E9CB943D1C45504C443395AF4A7BC158 /* Pods-Eaze-iOS-Homework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-Homework.release.xcconfig"; sourceTree = "<group>"; };
+		EAEFD8BFB74F5C1E8A784DA0555BCB0E /* GPHMeta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHMeta.swift; path = Source/GPHMeta.swift; sourceTree = "<group>"; };
+		EBEEC6B920F164F06BC41AFF3F2D1F4D /* GPHAsyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHAsyncOperation.swift; path = Source/GPHAsyncOperation.swift; sourceTree = "<group>"; };
+		EE91C9A65494DF96BCC4F77BFC92C492 /* GPHImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHImages.swift; path = Source/GPHImages.swift; sourceTree = "<group>"; };
+		F38197D9DCE49F1B5716E9D0FC9F7D3F /* GPHCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPHCategory.swift; path = Source/GPHCategory.swift; sourceTree = "<group>"; };
+		F3A0A9AA2A0B907BE16D2B08D9BB6868 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eaze-iOS-HomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5E5BCC52B1D753320A46B0DEEA93DE3 /* GiphyCoreSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GiphyCoreSDK-prefix.pch"; sourceTree = "<group>"; };
+		FB616A6CBD5B03CAF77ADE0FA4CA941F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEA528B0EC1FB820B7B1BD98F79B11B /* Pods-Eaze-iOS-HomeworkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eaze-iOS-HomeworkUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		932F699F94049717A06E05932A18B303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551C96B97E11DE57A0D42D7E09A2E0B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CA2C4B10407A5AA751AD793CC09F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28197A31D311E3CB645C18FEFA0D5EF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD419148B9B3AF9D09A0A7437AFBF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0E06E543F2F63122A665BE91768D54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74141E208F766D3ED271A8A7BAE16BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F338875619F7C37DFBAB683BD726AED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05EB9A88C98F52AC8C71B1AB337905CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE9444307E26A247C4BC0B92659813A4 /* GiphyCoreSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12017A6375811F5293049A83E0A1E609 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA48883F8DED2E07BA7AA53E9316A613 /* GiphyCoreSDK.modulemap */,
+				4EC0029E0073834CA4A9EC98B6C1CCC2 /* GiphyCoreSDK.xcconfig */,
+				2BF5AB76EC730FB965EF2889A540A0D3 /* GiphyCoreSDK-dummy.m */,
+				F5E5BCC52B1D753320A46B0DEEA93DE3 /* GiphyCoreSDK-prefix.pch */,
+				B2A57BF8CB482E12B67682D32BDE4076 /* GiphyCoreSDK-umbrella.h */,
+				40C8C7407D30C75512ED4ACB9DD8715B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GiphyCoreSDK";
+			sourceTree = "<group>";
+		};
+		132DB4238D752A1D17047E3EF0C37CC9 /* Pods-Eaze-iOS-Homework */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E0CCF65D057FFF5A82EC80892FEAB /* Info.plist */,
+				218928C3CD46505EAAFF3AC5B1AC2914 /* Pods-Eaze-iOS-Homework.modulemap */,
+				5D025451B82685CC4770330E51FAF79F /* Pods-Eaze-iOS-Homework-acknowledgements.markdown */,
+				51F45C751A3FB3FAC15D47E59AC224CD /* Pods-Eaze-iOS-Homework-acknowledgements.plist */,
+				C41C3AAD42F8814101505C87542A52FD /* Pods-Eaze-iOS-Homework-dummy.m */,
+				E57A8E399CFC8E05A062F07911310BC9 /* Pods-Eaze-iOS-Homework-frameworks.sh */,
+				AF6D00B2B904334DD79CC1EA0994C59D /* Pods-Eaze-iOS-Homework-resources.sh */,
+				C6FAD5D5BC56DBDA2E3FE6894E115100 /* Pods-Eaze-iOS-Homework-umbrella.h */,
+				DBAE1AD8370A3A4A2E745087B7786FBE /* Pods-Eaze-iOS-Homework.debug.xcconfig */,
+				E9CB943D1C45504C443395AF4A7BC158 /* Pods-Eaze-iOS-Homework.release.xcconfig */,
+			);
+			name = "Pods-Eaze-iOS-Homework";
+			path = "Target Support Files/Pods-Eaze-iOS-Homework";
+			sourceTree = "<group>";
+		};
+		2A9A82CB8BB6071F712EF569DD1FA7D5 /* Pods-Eaze-iOS-HomeworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16FD72C32275F8EBD37CB10A14900EAF /* Info.plist */,
+				DE0571DA55653ABFF8CFA82210B0C70A /* Pods-Eaze-iOS-HomeworkUITests.modulemap */,
+				C4FC67184930C9E3A6C96207C3C912B5 /* Pods-Eaze-iOS-HomeworkUITests-acknowledgements.markdown */,
+				53C797FF4C6545623B5C9D77AE25EDFC /* Pods-Eaze-iOS-HomeworkUITests-acknowledgements.plist */,
+				FDEA528B0EC1FB820B7B1BD98F79B11B /* Pods-Eaze-iOS-HomeworkUITests-dummy.m */,
+				9D8D9A6B9987D825ACDBFC86EF5374BB /* Pods-Eaze-iOS-HomeworkUITests-frameworks.sh */,
+				69CD3ED9ADCB2F74AFCB9A014726BE62 /* Pods-Eaze-iOS-HomeworkUITests-resources.sh */,
+				439EBF989F5682CB1607A4BE82FF355A /* Pods-Eaze-iOS-HomeworkUITests-umbrella.h */,
+				4942B2232279B3964C78581745F3031F /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */,
+				DF9F1F111706B2BA4A7EB107F1ACD3E4 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */,
+			);
+			name = "Pods-Eaze-iOS-HomeworkUITests";
+			path = "Target Support Files/Pods-Eaze-iOS-HomeworkUITests";
+			sourceTree = "<group>";
+		};
+		784D93D0353D1078A630E7A1C70AEEE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AF9E36EAA13446BF75D3441ED7986DF /* GiphyCoreSDK.framework */,
+				C99BBEB64493B1C31DB7C7F0F4666ED2 /* Pods_Eaze_iOS_Homework.framework */,
+				78156666900BDE71C60D31B67EC26BD2 /* Pods_Eaze_iOS_HomeworkTests.framework */,
+				61A9F307C35D8729D2EF294AB869F090 /* Pods_Eaze_iOS_HomeworkUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				05EB9A88C98F52AC8C71B1AB337905CF /* Pods */,
+				784D93D0353D1078A630E7A1C70AEEE0 /* Products */,
+				BF02C54EB9E6482C7196B8B32188174C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE9444307E26A247C4BC0B92659813A4 /* GiphyCoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E72F25E4042F1CB488C835A67B78A02F /* GPHAbstractClient.swift */,
+				EBEEC6B920F164F06BC41AFF3F2D1F4D /* GPHAsyncOperation.swift */,
+				F38197D9DCE49F1B5716E9D0FC9F7D3F /* GPHCategory.swift */,
+				9A302E40D1FD222152DBF5DF3EF4F8FE /* GPHClient.swift */,
+				DFF638B5AE9C0FC7DBC1A5DC905756D9 /* GPHError.swift */,
+				9C2E890A881CCCB5C5084D14560843C2 /* GPHImage.swift */,
+				EE91C9A65494DF96BCC4F77BFC92C492 /* GPHImages.swift */,
+				79CCAADEB624C6311BC49B0C76C4B45D /* GPHListCategoryResponse.swift */,
+				C8558C3C0F4B4879EF7DAD720FFFE136 /* GPHListMediaResponse.swift */,
+				5733DBB76B1D758D2D82D506ED9C74F6 /* GPHListTermSuggestionRespose.swift */,
+				313DA670A098A75441A958A8E26D8BE2 /* GPHMappable.swift */,
+				4616F153941CE80E311F06B302E21EC8 /* GPHMedia.swift */,
+				5C2120A44D70113159AD5A676B1C73FE /* GPHMediaResponse.swift */,
+				EAEFD8BFB74F5C1E8A784DA0555BCB0E /* GPHMeta.swift */,
+				E576238DD87C3BBC2ABD29C51AE5A5B7 /* GPHNetworkReachability.swift */,
+				305DFAE2C33DDD9BC4B6B996A95B004E /* GPHPagination.swift */,
+				B7B01A4E1D980D7DF3E0809B45486146 /* GPHRequest.swift */,
+				BD9ECBD0B2274F88C17B32BABBF15255 /* GPHResponse.swift */,
+				BC2CECA5768BCD55688A744BA4F9E84A /* GPHTermSuggestion.swift */,
+				D0C2AE4F48F459B75F427EB43DF3EE2B /* GPHTypes.swift */,
+				89A6060733AB76D96AAADCC48DDF72D3 /* GPHUser.swift */,
+				12017A6375811F5293049A83E0A1E609 /* Support Files */,
+			);
+			name = GiphyCoreSDK;
+			path = GiphyCoreSDK;
+			sourceTree = "<group>";
+		};
+		BF02C54EB9E6482C7196B8B32188174C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				132DB4238D752A1D17047E3EF0C37CC9 /* Pods-Eaze-iOS-Homework */,
+				ED4017BBE15C698C887539AEABB06096 /* Pods-Eaze-iOS-HomeworkTests */,
+				2A9A82CB8BB6071F712EF569DD1FA7D5 /* Pods-Eaze-iOS-HomeworkUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ED4017BBE15C698C887539AEABB06096 /* Pods-Eaze-iOS-HomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB616A6CBD5B03CAF77ADE0FA4CA941F /* Info.plist */,
+				CDC1198487D9238813CD131386167B91 /* Pods-Eaze-iOS-HomeworkTests.modulemap */,
+				6BCD4F037DA9CCD69792B99614BC830C /* Pods-Eaze-iOS-HomeworkTests-acknowledgements.markdown */,
+				C8891BA807B01CE4633736ACD529FACD /* Pods-Eaze-iOS-HomeworkTests-acknowledgements.plist */,
+				A4DBB13F599BD60529691999905BC5CA /* Pods-Eaze-iOS-HomeworkTests-dummy.m */,
+				D1182667116DD541B6AC0BDD36A82F94 /* Pods-Eaze-iOS-HomeworkTests-frameworks.sh */,
+				5947340C8359E21BDA0161777FE18616 /* Pods-Eaze-iOS-HomeworkTests-resources.sh */,
+				41ABA871897BBAAFB2D350B7EB4ED1E7 /* Pods-Eaze-iOS-HomeworkTests-umbrella.h */,
+				098177E5FD075A6D19D7DC2D25CE8925 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */,
+				F3A0A9AA2A0B907BE16D2B08D9BB6868 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */,
+			);
+			name = "Pods-Eaze-iOS-HomeworkTests";
+			path = "Target Support Files/Pods-Eaze-iOS-HomeworkTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C6D93C3246E679F6885C287AF0E723F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F807C99C0D4B8AD52A289DB151D4F5C6 /* GiphyCoreSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBAB21DA622150278BD5DE61390034F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42554B59E48EFDF7F50CCC889E3CCB75 /* Pods-Eaze-iOS-Homework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B9B0C5DAAECDDEE7CE96680577013 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE53DED47DF64B38FD14061FCFB693A1 /* Pods-Eaze-iOS-HomeworkTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE411F3BD8645B67198BE313F8DD600F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594E6C32ABA5C0993B30B415AC64ED4B /* Pods-Eaze-iOS-HomeworkUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5F516F8666197231E4DC8A87A24A35CD /* Pods-Eaze-iOS-Homework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B1FA6E1A90B51266C4D003DB309EA8 /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-Homework" */;
+			buildPhases = (
+				534AFAF0E9FB493E2B2987DB6B870605 /* Sources */,
+				932F699F94049717A06E05932A18B303 /* Frameworks */,
+				9DBAB21DA622150278BD5DE61390034F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E192A321C81823E4257EC7EF5479199A /* PBXTargetDependency */,
+			);
+			name = "Pods-Eaze-iOS-Homework";
+			productName = "Pods-Eaze-iOS-Homework";
+			productReference = C99BBEB64493B1C31DB7C7F0F4666ED2 /* Pods_Eaze_iOS_Homework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6695F43527071FD5A56AB135A0BB491A /* Pods-Eaze-iOS-HomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F1C7D956B2EA86DB14B82C7E070716 /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-HomeworkTests" */;
+			buildPhases = (
+				82E9AE7860C4488BCFEEA71740E59875 /* Sources */,
+				AD419148B9B3AF9D09A0A7437AFBF52E /* Frameworks */,
+				AE4B9B0C5DAAECDDEE7CE96680577013 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A130123220BEF26D2F5C5883907A2E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Eaze-iOS-HomeworkTests";
+			productName = "Pods-Eaze-iOS-HomeworkTests";
+			productReference = 78156666900BDE71C60D31B67EC26BD2 /* Pods_Eaze_iOS_HomeworkTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A38D1720A7FC53CCC113EE97A8A8878 /* Pods-Eaze-iOS-HomeworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C540EE09183980E2B3B74914862C5DE /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-HomeworkUITests" */;
+			buildPhases = (
+				21B45006F4992E25ED32D2E89AE72874 /* Sources */,
+				98CA2C4B10407A5AA751AD793CC09F79 /* Frameworks */,
+				FE411F3BD8645B67198BE313F8DD600F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				349B1843ECEFBC10DA72FCABE5147E62 /* PBXTargetDependency */,
+			);
+			name = "Pods-Eaze-iOS-HomeworkUITests";
+			productName = "Pods-Eaze-iOS-HomeworkUITests";
+			productReference = 61A9F307C35D8729D2EF294AB869F090 /* Pods_Eaze_iOS_HomeworkUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D620067E34ED8472940E23C403420BD3 /* GiphyCoreSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4E8E605DF026AA2987151438C7017A /* Build configuration list for PBXNativeTarget "GiphyCoreSDK" */;
+			buildPhases = (
+				39622ECC6B2A84A6F36DF424DBC9FD75 /* Sources */,
+				C74141E208F766D3ED271A8A7BAE16BD /* Frameworks */,
+				9C6D93C3246E679F6885C287AF0E723F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiphyCoreSDK;
+			productName = GiphyCoreSDK;
+			productReference = 2AF9E36EAA13446BF75D3441ED7986DF /* GiphyCoreSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 784D93D0353D1078A630E7A1C70AEEE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D620067E34ED8472940E23C403420BD3 /* GiphyCoreSDK */,
+				5F516F8666197231E4DC8A87A24A35CD /* Pods-Eaze-iOS-Homework */,
+				6695F43527071FD5A56AB135A0BB491A /* Pods-Eaze-iOS-HomeworkTests */,
+				6A38D1720A7FC53CCC113EE97A8A8878 /* Pods-Eaze-iOS-HomeworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21B45006F4992E25ED32D2E89AE72874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2EBC1C1889E18264138A989F82C1BB /* Pods-Eaze-iOS-HomeworkUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39622ECC6B2A84A6F36DF424DBC9FD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037FADB198C4280550FB9A311C651D50 /* GiphyCoreSDK-dummy.m in Sources */,
+				92E1F80B98D3A01D35A1BAAB40B33915 /* GPHAbstractClient.swift in Sources */,
+				54FEF5C8C7806CBDABBB0E1FD2E9F86E /* GPHAsyncOperation.swift in Sources */,
+				F593DFCBEA4A15C6DF234BB1A0F223BC /* GPHCategory.swift in Sources */,
+				D2FCD1310905154E9192A188F0C7A91F /* GPHClient.swift in Sources */,
+				B25B1A9C01022964C916DEDBEA2848A5 /* GPHError.swift in Sources */,
+				D72A820ADD7D753F30085ED1A773D183 /* GPHImage.swift in Sources */,
+				7D74BF99EE680BDC0EE3856AA30623C8 /* GPHImages.swift in Sources */,
+				76F8E4DBCD923D0F9C4E6B5E2C6ABDD1 /* GPHListCategoryResponse.swift in Sources */,
+				C4852F759796B2708CDD158967AC727B /* GPHListMediaResponse.swift in Sources */,
+				0F2C00D9580F96C48A7CED64081F8E90 /* GPHListTermSuggestionRespose.swift in Sources */,
+				F5E3A50E6438374C643D1805269D8D2B /* GPHMappable.swift in Sources */,
+				0E4A2273EB8C1925AAB873D52B8399DB /* GPHMedia.swift in Sources */,
+				1C536703416D113FDDD21D0AA0917641 /* GPHMediaResponse.swift in Sources */,
+				B22CFC17ABD978058F2DB368E2D3DAE8 /* GPHMeta.swift in Sources */,
+				1A6368F349A3BC37263F52D5DB25431E /* GPHNetworkReachability.swift in Sources */,
+				89A4C360DA660E21E7C7348BD358FBCA /* GPHPagination.swift in Sources */,
+				CC93F020DBFA5441AB741597078D4736 /* GPHRequest.swift in Sources */,
+				EBBBA5D64375D79EB025A488D8078A35 /* GPHResponse.swift in Sources */,
+				8A0DEDD55B0AB096FFAF8D36C0FE2DCB /* GPHTermSuggestion.swift in Sources */,
+				0E452192359891D833C1C1DDDED890EC /* GPHTypes.swift in Sources */,
+				0047406DED211475D114498059B5625A /* GPHUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534AFAF0E9FB493E2B2987DB6B870605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9FCBBB7AA260C4D4E1F6923302EE3E /* Pods-Eaze-iOS-Homework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E9AE7860C4488BCFEEA71740E59875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3068B50F0C2DDC3F666C429838CCF930 /* Pods-Eaze-iOS-HomeworkTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		349B1843ECEFBC10DA72FCABE5147E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GiphyCoreSDK;
+			target = D620067E34ED8472940E23C403420BD3 /* GiphyCoreSDK */;
+			targetProxy = 0833CC8EB5AED7D0E0097BF67469D755 /* PBXContainerItemProxy */;
+		};
+		4A130123220BEF26D2F5C5883907A2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GiphyCoreSDK;
+			target = D620067E34ED8472940E23C403420BD3 /* GiphyCoreSDK */;
+			targetProxy = 6F5A987567F9F1C6C3B6FC9AD426FD1B /* PBXContainerItemProxy */;
+		};
+		E192A321C81823E4257EC7EF5479199A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GiphyCoreSDK;
+			target = D620067E34ED8472940E23C403420BD3 /* GiphyCoreSDK */;
+			targetProxy = 4CE63710F00C798612B2040E70CE5470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		359B1394A31F8D26F409701CC07734B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBAE1AD8370A3A4A2E745087B7786FBE /* Pods-Eaze-iOS-Homework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-Homework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_Homework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EDA942796EB90BACAB527F0FCFE6EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098177E5FD075A6D19D7DC2D25CE8925 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_HomeworkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75C1E9935E1BE24A8B9A8DC23A5E9C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9F1F111706B2BA4A7EB107F1ACD3E4 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_HomeworkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94C2D108A689B965738F84464994DCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A0A9AA2A0B907BE16D2B08D9BB6868 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_HomeworkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0D0076DAAD392E04E3C1F7F2DB3A235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC0029E0073834CA4A9EC98B6C1CCC2 /* GiphyCoreSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GiphyCoreSDK/GiphyCoreSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GiphyCoreSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GiphyCoreSDK/GiphyCoreSDK.modulemap";
+				PRODUCT_NAME = GiphyCoreSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFBF3E6DEE1397329057894A57A8CDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CB943D1C45504C443395AF4A7BC158 /* Pods-Eaze-iOS-Homework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-Homework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_Homework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C4010C4605C349DA95A4CAAA2A9B7256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4942B2232279B3964C78581745F3031F /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eaze_iOS_HomeworkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F791DCC8FA8E476E23F33A461C342DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC0029E0073834CA4A9EC98B6C1CCC2 /* GiphyCoreSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GiphyCoreSDK/GiphyCoreSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GiphyCoreSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GiphyCoreSDK/GiphyCoreSDK.modulemap";
+				PRODUCT_NAME = GiphyCoreSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C540EE09183980E2B3B74914862C5DE /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-HomeworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4010C4605C349DA95A4CAAA2A9B7256 /* Debug */,
+				75C1E9935E1BE24A8B9A8DC23A5E9C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4E8E605DF026AA2987151438C7017A /* Build configuration list for PBXNativeTarget "GiphyCoreSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D0076DAAD392E04E3C1F7F2DB3A235 /* Debug */,
+				F791DCC8FA8E476E23F33A461C342DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B1FA6E1A90B51266C4D003DB309EA8 /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B1394A31F8D26F409701CC07734B4 /* Debug */,
+				AFBF3E6DEE1397329057894A57A8CDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F1C7D956B2EA86DB14B82C7E070716 /* Build configuration list for PBXNativeTarget "Pods-Eaze-iOS-HomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDA942796EB90BACAB527F0FCFE6EE9 /* Debug */,
+				94C2D108A689B965738F84464994DCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

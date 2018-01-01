@@ -1,0 +1,6 @@
+framework module Pods_Eaze_iOS_HomeworkTests {
+  umbrella header "Pods-Eaze-iOS-HomeworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
