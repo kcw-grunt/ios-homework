@@ -55,13 +55,14 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyPhotoCell
         
-        cell.backgroundColor = UIColor.green
+       //let giphyImage = photoForIndexPath(indexPath: indexPath)
+
         /*
          //RESEARCH: Does this adopt Giphy class
          cell.giphyImageView.image = UIImage.animatedImage(with: <#T##[UIImage]#>, duration: <#T##TimeInterval#>)
         cell.giphyImageView.image = UIImage.animatedImageNamed(<#T##name: String##String#>, duration: <#T##TimeInterval#>)
          */
-        //cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
+        cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
         return cell
     }
 

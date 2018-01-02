@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GiphyCoreSDK
 
 let headerInset = HWHelper.headerGivenIdiom()
 class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate {
@@ -89,8 +90,8 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print(searchBar.text!)
-        
+        let resu = GiphyHelper.resultsFromGiphySearch(searchText: searchBar.text!)
+        print(resu as! String)
     }
     
     override func didReceiveMemoryWarning() {

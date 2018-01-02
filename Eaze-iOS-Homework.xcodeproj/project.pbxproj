@@ -16,9 +16,6 @@
 		244672511FEF28A700CA7C88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672501FEF28A700CA7C88 /* DetailViewController.swift */; };
 		244672521FEF28A700CA7C88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672501FEF28A700CA7C88 /* DetailViewController.swift */; };
 		244672531FEF28A700CA7C88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672501FEF28A700CA7C88 /* DetailViewController.swift */; };
-		244672551FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672541FEF3FBC00CA7C88 /* GPHHelper.swift */; };
-		244672561FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672541FEF3FBC00CA7C88 /* GPHHelper.swift */; };
-		244672571FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244672541FEF3FBC00CA7C88 /* GPHHelper.swift */; };
 		24C833491FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */; };
 		24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */; };
 		24C8334B1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */; };
@@ -31,6 +28,9 @@
 		24C833621FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
 		24C833631FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
 		24C833641FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
+		24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
+		24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
+		24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
 		2BAA67225F6ABE83515D940A /* Pods_Eaze_iOS_HomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F6EB52B0748CEE8586313 /* Pods_Eaze_iOS_HomeworkUITests.framework */; };
 		4C1012B1500E785876A82E37 /* Pods_Eaze_iOS_HomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B79ECB3599A6453BB68210 /* Pods_Eaze_iOS_HomeworkTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,11 +67,11 @@
 		244672421FEF09DB00CA7C88 /* Eaze_iOS_HomeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eaze_iOS_HomeworkUITests.swift; sourceTree = "<group>"; };
 		244672441FEF09DB00CA7C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244672501FEF28A700CA7C88 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		244672541FEF3FBC00CA7C88 /* GPHHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPHHelper.swift; sourceTree = "<group>"; };
 		24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPHCollectionViewController.swift; sourceTree = "<group>"; };
 		24C833541FF9DC95008641FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyPhotoCell.swift; sourceTree = "<group>"; };
 		24C833611FFACF17008641FC /* HWHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWHelper.swift; sourceTree = "<group>"; };
+		24F4F2671FFB307000D27210 /* GiphyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyHelper.swift; sourceTree = "<group>"; };
 		252C1BEE67D05E91939F702B /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		297FCB550905400E869D7665 /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
 		546811D9114F4B83FE4C98FE /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +152,6 @@
 				24C833541FF9DC95008641FC /* MainViewController.swift */,
 				24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */,
 				24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */,
-				244672541FEF3FBC00CA7C88 /* GPHHelper.swift */,
 				244672501FEF28A700CA7C88 /* DetailViewController.swift */,
 				244672291FEF09DA00CA7C88 /* Assets.xcassets */,
 				2446722B1FEF09DA00CA7C88 /* LaunchScreen.storyboard */,
@@ -183,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				24C833611FFACF17008641FC /* HWHelper.swift */,
+				24F4F2671FFB307000D27210 /* GiphyHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -499,7 +499,7 @@
 				24C833491FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24C833621FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672511FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
-				244672551FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */,
+				24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				244672231FEF09DA00CA7C88 /* AppDelegate.swift in Sources */,
 				24C833551FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
@@ -514,7 +514,7 @@
 				24C833631FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672521FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
-				244672561FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */,
+				24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				24C833561FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +528,7 @@
 				24C833641FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672531FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24C8334B1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
-				244672571FEF3FBC00CA7C88 /* GPHHelper.swift in Sources */,
+				24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				24C833571FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
