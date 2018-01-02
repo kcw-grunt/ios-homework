@@ -30,11 +30,12 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         giphyCollectionView.delegate = self
         giphyCollectionView.register(GiphyPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.view.addSubview(giphyCollectionView)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(forName: .giphySearchResultsReceived, object: nil, queue: .main) {[weak self] (notification) in
+            //self?.handleAssetTagNamingProcess(notification: notification)
+            //Refresh CollectionView
+        }
+ 
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,17 +8,23 @@
 
 import UIKit
 import GiphyCoreSDK
+import Gifu
+import SwiftyJSON
+
 
 let headerInset = HWHelper.headerGivenIdiom()
 class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate {
 
     var searchController: UISearchController!
     var searchBar: UISearchBar!
-    var filterString: String!
+    var giphyClient: GPHClient!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Kerry's Giphy Picker"
+        
+        giphyClient = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
+        
         setupSearchController()
         
        let containerView = UIView()
@@ -44,6 +50,9 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
             ])
 
         collectionViewController.didMove(toParentViewController: self)
+        
+        
+        
     }
  
     
@@ -85,13 +94,24 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
             return
         }
         
-        filterString = searchController.searchBar.text
-        print(filterString)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let resu = GiphyHelper.resultsFromGiphySearch(searchText: searchBar.text!)
-        print(resu as! String)
+ 
+        giphyClient.search(searchBar.text!) { (response, error) in
+            if let response = response, let data = response.data, let pagination = response.pagination {
+                for gphmedia in data {
+                    
+                    print("NEXT url %@\n",gphmedia.url)
+                    print("NEXT jsonRepresentation %@\n",gphmedia.jsonRepresentation)
+                    print("NEXT title %@\n",gphmedia.title)
+                    print("\n")
+                }
+                
+            } else {
+                print("No Results Found")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -10,27 +10,41 @@ import UIKit
 import GiphyCoreSDK
 class GiphyHelper: NSObject {
     
-
-    class func resultsFromGiphySearch(searchText:String) -> String {
+    public func arrayOfMediaFromGiphySearch(searchText:String) -> [GPHMedia] {
         let client = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
-
-        let searcher = client.search(searchText) { (response, error) in
+        let defaultMedia = [GPHMedia()]
+        let  test = client.search(searchText) { (response, error) in
             
                 if let response = response, let data = response.data, let pagination = response.pagination {
-                    print(response.meta)
-                    print(pagination)
-                    for result in data {
-                        print(result)
-                    }
+                    self.loadMediaData(responseData: data)
                 } else {
                     print("No Results Found")
                 }
         }
-        return ""
+        return defaultMedia
         
     }
     
-    class func loadMediaData(responseData:Any) -> Array<GPHMedia> {
+    func loadMediaData(responseData:[GPHMedia]) -> Array<GPHMedia> {
+        for gphmedia in responseData {
+            print(gphmedia.bitlyGifUrl)
+            print(gphmedia.url)
+            print(gphmedia.caption)
+            print(gphmedia.contentUrl)
+            print(gphmedia.createDate)
+            print(gphmedia.description)
+            print(gphmedia.embedUrl)
+            print(gphmedia.jsonRepresentation)
+            print(gphmedia.title)
+            print(gphmedia.trendingDate)
+            print("\n")
+            print("NEXT MEDIA")
+            
+        }
+        
+        NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil)
+
+        
         return [GPHMedia()]
     }
 
