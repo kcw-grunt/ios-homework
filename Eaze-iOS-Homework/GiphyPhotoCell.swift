@@ -15,11 +15,10 @@ class GiphyPhotoCell: UICollectionViewCell {
  
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureViews()
-
         giphyImageView = UIImageView()
         giphyImageView.contentMode = .scaleAspectFill
         giphyImageView.isUserInteractionEnabled = false
+        giphyImageView.image = image
         contentView.addSubview(giphyImageView)
     }
     
@@ -36,13 +35,6 @@ class GiphyPhotoCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func configureViews() {
-        giphyImageView = UIImageView()
-        giphyImageView.image = image
-        giphyImageView.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
-        giphyImageView.backgroundColor = .red
-        self.addSubview(giphyImageView)
-    }
+  
 }
 
