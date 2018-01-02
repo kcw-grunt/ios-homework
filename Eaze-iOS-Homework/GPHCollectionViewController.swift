@@ -9,17 +9,29 @@
 import UIKit
 
 private let reuseIdentifier = "giphyPhotoCell"
+fileprivate let dumbInset: CGFloat = 20
 
-class GPHCollectionViewController: UICollectionViewController {
+
+class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource {
+
+    
+    var giphyCollectionView: UICollectionView!
+    fileprivate let itemsPerRow: CGFloat = 3
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 100, height: 100)
+        giphyCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        giphyCollectionView.dataSource = self
+        giphyCollectionView.delegate = self
+        giphyCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        giphyCollectionView.backgroundColor = .red
+        self.view.addSubview(giphyCollectionView)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -28,35 +40,28 @@ class GPHCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+ 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! UICollectionViewCell
+        cell.backgroundColor = UIColor.green
+        /*
+         //RESEARCH: Does this adopt Giphy class
+         cell.giphyImageView.image = UIImage.animatedImage(with: <#T##[UIImage]#>, duration: <#T##TimeInterval#>)
+        cell.giphyImageView.image = UIImage.animatedImageNamed(<#T##name: String##String#>, duration: <#T##TimeInterval#>)
+         */
+        //cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
         return cell
     }
 

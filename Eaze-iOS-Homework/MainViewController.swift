@@ -9,8 +9,7 @@
 import UIKit
 
 let headerInset = HWHelper.headerGivenIdiom()
-
-class MainViewController: UIViewController, UISearchResultsUpdating {
+class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate {
 
     var searchController: UISearchController!
     var searchBar: UISearchBar!
@@ -19,11 +18,31 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Kerry's Giphy Picker"
-       setupSearchController()
-       
+        setupSearchController()
         
- 
+       let containerView = UIView()
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(containerView)
+        NSLayoutConstraint.activate([
+            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 144),
+            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
+            ])
         
+        // add child view controller view to container
+        let collectionViewController = GPHCollectionViewController()
+        addChildViewController(collectionViewController)
+        collectionViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(collectionViewController.view)
+        NSLayoutConstraint.activate([
+            collectionViewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            collectionViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            collectionViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor),
+            collectionViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            ])
+
+        collectionViewController.didMove(toParentViewController: self)
     }
  
     
@@ -38,19 +57,25 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
         //Customize Search Bar
         searchBar = UISearchBar.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 0))
         searchBar = searchController.searchBar
+        searchBar.delegate = self
+
         searchBar.placeholder = "Find a giphy..."
+        for subView in searchBar.subviews {
+            if subView .isKind(of: UITextField.self) {
+                let tf = subView as! UITextField
+                    tf.returnKeyType = .search
+            }
+        }
         
+        //Customize Header
         let setView = UIView.init(frame: CGRect(x: 0, y: headerInset, width: self.view.frame.width, height: headerInset))
         setView.addSubview(searchBar)
-       // setView.translatesAutoresizingMaskIntoConstraints = false
-
         self.view.addSubview(setView)
     }
     
     // MARK: - Search Delegate
-
     func updateSearchResults(for searchController: UISearchController) {
-        print(searchController.searchBar)
+       // print(searchController.searchBar.text!)
         
     }
     
@@ -63,11 +88,14 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
         print(filterString)
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print(searchBar.text!)
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }
