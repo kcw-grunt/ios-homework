@@ -28,7 +28,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         giphyCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         giphyCollectionView.dataSource = self
         giphyCollectionView.delegate = self
-        giphyCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        giphyCollectionView.register(GiphyPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.view.addSubview(giphyCollectionView)
 
         // Uncomment the following line to preserve selection between presentations
@@ -53,7 +53,8 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyPhotoCell
+        
         cell.backgroundColor = UIColor.green
         /*
          //RESEARCH: Does this adopt Giphy class
