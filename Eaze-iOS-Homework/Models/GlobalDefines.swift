@@ -9,7 +9,7 @@
 import Foundation
 
 extension Notification.Name {
-    static let giphySearchResultsReceived = Notification.Name("ReceivedGpihys")
+    static let giphySearchResultsReceived = Notification.Name("ReceivedGiphys")
 }
 
 

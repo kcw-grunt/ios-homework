@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Gifu
 
 class GiphyPhotoCell: UICollectionViewCell {
     
+    var titleLabel: UILabel = UILabel()
     var giphyImageView: UIImageView = UIImageView()
+    var giphyGIFView: GIFImageView = GIFImageView()
     var image: UIImage = UIImage.init(named: "defaultCellImage")!
  
     override init(frame: CGRect) {
@@ -20,6 +23,14 @@ class GiphyPhotoCell: UICollectionViewCell {
         giphyImageView.isUserInteractionEnabled = false
         giphyImageView.image = image
         contentView.addSubview(giphyImageView)
+        
+        giphyGIFView = GIFImageView()
+        giphyGIFView.contentMode = .scaleAspectFill
+        giphyGIFView.isUserInteractionEnabled = true
+        contentView.addSubview(giphyGIFView)
+
+        titleLabel = UILabel()
+        contentView.addSubview(titleLabel)
     }
     
     override func layoutSubviews() {
@@ -30,6 +41,16 @@ class GiphyPhotoCell: UICollectionViewCell {
         frame.origin.x = 0
         frame.origin.y = 0
         giphyImageView.frame = frame
+        giphyGIFView.frame = frame
+        
+        let label = titleLabel
+        let labelHeight = CGFloat(18.0)
+        label.frame = CGRect.init(x: 0, y: self.frame.size.height-labelHeight, width: self.frame.size.width, height: labelHeight)
+        label.textColor = .white
+        label.backgroundColor = .clear
+        label.font = UIFont.init(name: "Arial", size: 8.0)
+        label.textAlignment = .center
+        titleLabel = label
     }
     
     required init?(coder aDecoder: NSCoder) {

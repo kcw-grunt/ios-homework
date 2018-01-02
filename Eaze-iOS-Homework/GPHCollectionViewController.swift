@@ -17,7 +17,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
 
     
     var giphyCollectionView: UICollectionView!
-    var giphyArray = [GPHMedia()]
+    var giphyArray = [MyGiphySummaryObject]()
     fileprivate let itemsPerRow: CGFloat = 3
 
     override func viewDidLoad() {
@@ -30,12 +30,10 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         giphyCollectionView.delegate = self
         giphyCollectionView.register(GiphyPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.view.addSubview(giphyCollectionView)
-        
-        NotificationCenter.default.addObserver(forName: .giphySearchResultsReceived, object: nil, queue: .main) {[weak self] (notification) in
-            //self?.handleAssetTagNamingProcess(notification: notification)
-            //Refresh CollectionView
-        }
  
+        NotificationCenter.default.addObserver(forName: .giphySearchResultsReceived, object: nil, queue: .main) { [weak self] (notification) in
+            self?.handleGiphyDataNotification(notification: notification)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +41,16 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         // Dispose of any resources that can be recreated.
     }
  
+    
+    //NSNotification
+    
+    func handleGiphyDataNotification(notification:Notification) {
+        if let data = notification.userInfo as? [String:Any], let array = data["filledArray"] as? [MyGiphySummaryObject] {
+            self.giphyArray = array
+            self.giphyCollectionView.reloadData()
+        }
+    }
+    
     // MARK: UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -55,15 +63,10 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyPhotoCell
+        let giphyObj = self.giphyArray[indexPath.row] as? MyGiphySummaryObject
         
-       //let giphyImage = photoForIndexPath(indexPath: indexPath)
-
-        /*
-         //RESEARCH: Does this adopt Giphy class
-         cell.giphyImageView.image = UIImage.animatedImage(with: <#T##[UIImage]#>, duration: <#T##TimeInterval#>)
-        cell.giphyImageView.image = UIImage.animatedImageNamed(<#T##name: String##String#>, duration: <#T##TimeInterval#>)
-         */
-        cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
+            cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
+            cell.titleLabel.text = giphyObj?.title
         return cell
     }
 

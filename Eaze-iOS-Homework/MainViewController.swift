@@ -100,16 +100,20 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
  
         giphyClient.search(searchBar.text!) { (response, error) in
-            if let response = response, let data = response.data as? [GPHMedia], let pagination = response.pagination {
-                if let filledArray = GiphyHelper.loadMediaData(responseData:data) as? [MyGiphySummaryObject] {
-                    
-                }
-            } else {
+            if let error = error as NSError? {
+                // Do what you want with the error
+            }
+            if let response = response,
+                let data = response.data as? [GPHMedia],
+                let filledArray = GiphyHelper.loadMediaData(responseData:data) as? [MyGiphySummaryObject],
+                let pagination = response.pagination {
+                    NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil , userInfo: ["filledArray": filledArray])
+                } else {
                 print("No Results Found")
             }
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
