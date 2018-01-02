@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GiphyCoreSDK
 
 private let reuseIdentifier = "giphyPhotoCell"
 fileprivate let dumbInset: CGFloat = 20
@@ -16,6 +17,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
 
     
     var giphyCollectionView: UICollectionView!
+    var giphyArray = [GPHMedia()]
     fileprivate let itemsPerRow: CGFloat = 3
 
     override func viewDidLoad() {
@@ -27,7 +29,6 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         giphyCollectionView.dataSource = self
         giphyCollectionView.delegate = self
         giphyCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        giphyCollectionView.backgroundColor = .red
         self.view.addSubview(giphyCollectionView)
 
         // Uncomment the following line to preserve selection between presentations
@@ -42,14 +43,12 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     }
  
     // MARK: UICollectionViewDataSource
-
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return giphyArray.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -66,34 +65,17 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     }
 
     // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+ 
+    func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
         return false
     }
 
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+    func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return false
     }
 
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+    func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
     }
-    */
 
 }
