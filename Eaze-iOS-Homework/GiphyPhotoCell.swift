@@ -14,18 +14,19 @@ class GiphyPhotoCell: UICollectionViewCell {
     var titleLabel: UILabel = UILabel()
     var giphyImageView: UIImageView = UIImageView()
     var giphyGIFView: GIFImageView = GIFImageView()
+    var giphySmallUrl:String = ""
     var image: UIImage = UIImage.init(named: "defaultCellImage")!
  
     override init(frame: CGRect) {
         super.init(frame: frame)
         giphyImageView = UIImageView()
-        giphyImageView.contentMode = .scaleAspectFill
+        giphyImageView.contentMode = .scaleAspectFit
         giphyImageView.isUserInteractionEnabled = false
         giphyImageView.image = image
         contentView.addSubview(giphyImageView)
         
         giphyGIFView = GIFImageView()
-        giphyGIFView.contentMode = .scaleAspectFill
+        giphyGIFView.contentMode = .scaleAspectFit
         giphyGIFView.isUserInteractionEnabled = true
         contentView.addSubview(giphyGIFView)
 
@@ -35,7 +36,7 @@ class GiphyPhotoCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        var frame = giphyImageView.frame
+        var frame = giphyGIFView.frame
         frame.size.height = self.frame.size.height
         frame.size.width = self.frame.size.width
         frame.origin.x = 0
@@ -53,6 +54,10 @@ class GiphyPhotoCell: UICollectionViewCell {
         titleLabel = label
     }
     
+    
+    public func animate(url:String) {
+        self.giphyGIFView.animate(withGIFURL: URL.init(string: url)!)
+    }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

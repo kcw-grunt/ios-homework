@@ -36,6 +36,12 @@
 		24F4F2701FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
 		24F4F2711FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
 		24F4F2721FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
+		24F4F2741FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
+		24F4F2751FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
+		24F4F2761FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
+		24F4F2781FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
+		24F4F2791FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
+		24F4F27A1FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
 		26533062B577E2021CD96F2D /* Pods_Eaze_iOS_HomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFC1731BE93362383444892 /* Pods_Eaze_iOS_HomeworkUITests.framework */; };
 		6FC5F98CBF22BF58613358AB /* Pods_Eaze_iOS_HomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */; };
 		E4B84A31A4A73DC91BA1DF9F /* Pods_Eaze_iOS_Homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */; };
@@ -79,6 +85,8 @@
 		24F4F2671FFB307000D27210 /* GiphyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyHelper.swift; sourceTree = "<group>"; };
 		24F4F26B1FFB4B4200D27210 /* GlobalDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefines.swift; sourceTree = "<group>"; };
 		24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphySummaryObject.swift; sourceTree = "<group>"; };
+		24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helper.swift"; sourceTree = "<group>"; };
+		24F4F2771FFC4BD200D27210 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
 		44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_HomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,9 +185,11 @@
 			isa = PBXGroup;
 			children = (
 				24C833611FFACF17008641FC /* HWHelper.swift */,
+				24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */,
 				24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */,
 				24F4F2671FFB307000D27210 /* GiphyHelper.swift */,
 				24F4F26B1FFB4B4200D27210 /* GlobalDefines.swift */,
+				24F4F2771FFC4BD200D27210 /* Reachability.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,6 +535,8 @@
 				24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				24F4F26C1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				244672231FEF09DA00CA7C88 /* AppDelegate.swift in Sources */,
+				24F4F2741FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
+				24F4F2781FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833551FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +553,8 @@
 				24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26D1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */,
+				24F4F2751FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
+				24F4F2791FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833561FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +571,8 @@
 				24C8334B1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26E1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */,
+				24F4F2761FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
+				24F4F27A1FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833571FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

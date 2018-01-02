@@ -19,15 +19,18 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     var collectionViewController: GPHCollectionViewController!
     var searchBar: UISearchBar!
     var giphyClient: GPHClient!
+    var reachability: Reachability!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Kerry's Giphy Picker"
         
-        giphyClient = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
         
+        giphyClient = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
         setupSearchController()
         setupContainerView()
+        self.reachability = Reachability()
+        
     }
  
     
@@ -99,24 +102,37 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
  
-        giphyClient.search(searchBar.text!) { (response, error) in
-            if let error = error as NSError? {
-                // Do what you want with the error
+        if Reachability.isConnectedToNetwork() {
+            giphyClient.search(searchBar.text!) { (response, error) in
+                if let error = error as NSError? {
+                    // Do what you want with the error
+                }
+                if let response = response,
+                    let data = response.data as? [GPHMedia],
+                    let filledArray = GiphyHelper.loadMediaData(responseData:data) as? [MyGiphySummaryObject],
+                    let pagination = response.pagination {
+                        NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil , userInfo: ["filledArray": filledArray])
+                    } else {
+                    self.genericAlertController(title: "No Giphys Found!", message: "Please search later. Or, change your query")
+
+                }
             }
-            if let response = response,
-                let data = response.data as? [GPHMedia],
-                let filledArray = GiphyHelper.loadMediaData(responseData:data) as? [MyGiphySummaryObject],
-                let pagination = response.pagination {
-                    NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil , userInfo: ["filledArray": filledArray])
-                } else {
-                print("No Results Found")
-            }
+        } else {
+            self.genericAlertController(title: "No Internet!", message: "Please connect to the Internet to get the coolest Giphys.")
+           
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func genericAlertController(title:String, message:String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 
 }

@@ -18,7 +18,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     
     var giphyCollectionView: UICollectionView!
     var giphyArray = [MyGiphySummaryObject]()
-    fileprivate let itemsPerRow: CGFloat = 3
+    fileprivate let itemsPerRow: CGFloat = 4
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +62,9 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyPhotoCell
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiphyPhotoCell
         let giphyObj = self.giphyArray[indexPath.row] as? MyGiphySummaryObject
-        
-            cell.giphyImageView.image = UIImage.init(named: "defaultCellImage")
-            cell.titleLabel.text = giphyObj?.title
+        configureCell(cell:cell, objData:giphyObj!)
         return cell
     }
 
@@ -82,6 +80,27 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
 
     func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    }
+    
+ 
+    func configureCell(cell:GiphyPhotoCell, objData:MyGiphySummaryObject) {
+ 
+        URLSession.shared.dataTask(with: NSURL(string: objData.fixedHeightSmallStillUrl)! as URL, completionHandler: { (data, response, error) -> Void in
+                if error != nil {
+                    print(error)
+                    return
+                }
+                DispatchQueue.main.async(execute: { () -> Void in
+                    let image = UIImage(data: data!)
+                    cell.giphyImageView.image = image
+                })
+            }).resume()
+        
+        cell.animate(url:objData.fixedHeightSmallUrl)
+        cell.titleLabel.text = objData.title
+        if cell.giphyGIFView.isAnimating {
+            cell.giphyImageView.isHidden = true
+        }
     }
 
 }
