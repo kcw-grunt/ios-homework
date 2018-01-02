@@ -6,9 +6,25 @@
 //  Copyright © 2018 kerrywashington. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct MyGiphySummaryObject {
-    var title: String
+class MyGiphySummaryObject {
+    var title: String = ""
     var url: String
+    var fixedHeightSmallUrl: String  = ""
+    var fixedHeightSmallStillUrl: String = ""
+    var loopingUrl: String = ""
+    var originalUrl: String = ""
+    var height: Float = 0.0
+    
+    init(baseUrl:String) {
+        self.url = baseUrl
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
 }

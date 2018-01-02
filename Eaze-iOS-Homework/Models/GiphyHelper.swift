@@ -8,47 +8,40 @@
 
 import UIKit
 import GiphyCoreSDK
-class GiphyHelper: NSObject {
-    
-    public func arrayOfMediaFromGiphySearch(searchText:String) -> [GPHMedia] {
-        let client = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
-        let defaultMedia = [GPHMedia()]
-        let  test = client.search(searchText) { (response, error) in
-            
-                if let response = response, let data = response.data, let pagination = response.pagination {
-                    self.loadMediaData(responseData: data)
-                } else {
-                    print("No Results Found")
-                }
-        }
-        return defaultMedia
-        
+import Foundation
+
+class GiphyHelper {
+ 
+   class func loadMediaData(responseData:[GPHMedia]) -> Array<MyGiphySummaryObject> {
+        var filledArray : Array<MyGiphySummaryObject> = []
+            for gphmedia in responseData {
+                let obj = GiphyHelper.parseGiphyMedia(object: gphmedia.jsonRepresentation!)
+                filledArray.append(obj)
+            }
+        return filledArray
     }
     
-    func loadMediaData(responseData:[GPHMedia]) -> Array<GPHMedia> {
-        for gphmedia in responseData {
-            print(gphmedia.bitlyGifUrl)
-            print(gphmedia.url)
-            print(gphmedia.caption)
-            print(gphmedia.contentUrl)
-            print(gphmedia.createDate)
-            print(gphmedia.description)
-            print(gphmedia.embedUrl)
-            print(gphmedia.jsonRepresentation)
-            print(gphmedia.title)
-            print(gphmedia.trendingDate)
-            print("\n")
-            print("NEXT MEDIA")
-            
+    class func parseGiphyMedia(object: GPHJSONObject) -> MyGiphySummaryObject {
+        
+        var  filledObject = MyGiphySummaryObject(baseUrl:"NOURL")
+        if let url = object["url"] as? String,
+            let title = object["title"] as? String,
+            let images = object["images"] as? [String:Any],
+            let fixedHeightSmall = images["fixed_height_small"] as? [String:Any],
+            let height = fixedHeightSmall["height"] as? String,
+            let fixedHeightSmallStill = images["fixed_height_small_still"] as? [String:Any],
+            let orig = images["original"] as? [String:Any] {
+                let obj = MyGiphySummaryObject(baseUrl:url)
+                obj.title = title
+                obj.url = url
+                obj.fixedHeightSmallUrl = fixedHeightSmall["url"] as! String
+                obj.fixedHeightSmallStillUrl = fixedHeightSmallStill["url"] as! String
+                obj.originalUrl = orig["url"] as! String
+                obj.height = Float(height) ?? 0.0
+                filledObject = obj
         }
-        
-        NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil)
-
-        
-        return [GPHMedia()]
+        return filledObject
     }
-
-    
 }
 
 

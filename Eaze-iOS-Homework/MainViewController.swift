@@ -16,6 +16,7 @@ let headerInset = HWHelper.headerGivenIdiom()
 class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate {
 
     var searchController: UISearchController!
+    var collectionViewController: GPHCollectionViewController!
     var searchBar: UISearchBar!
     var giphyClient: GPHClient!
     
@@ -26,8 +27,12 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
         giphyClient = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
         
         setupSearchController()
-        
-       let containerView = UIView()
+        setupContainerView()
+    }
+ 
+    
+    func setupContainerView() {
+        let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerView)
         NSLayoutConstraint.activate([
@@ -38,7 +43,7 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
             ])
         
         // add child view controller view to container
-        let collectionViewController = GPHCollectionViewController()
+        collectionViewController = GPHCollectionViewController()
         addChildViewController(collectionViewController)
         collectionViewController.view.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(collectionViewController.view)
@@ -48,13 +53,9 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
             collectionViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor),
             collectionViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
             ])
-
+        
         collectionViewController.didMove(toParentViewController: self)
-        
-        
-        
     }
- 
     
     func setupSearchController() {
         
@@ -99,15 +100,10 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
  
         giphyClient.search(searchBar.text!) { (response, error) in
-            if let response = response, let data = response.data, let pagination = response.pagination {
-                for gphmedia in data {
+            if let response = response, let data = response.data as? [GPHMedia], let pagination = response.pagination {
+                if let filledArray = GiphyHelper.loadMediaData(responseData:data) as? [MyGiphySummaryObject] {
                     
-                    print("NEXT url %@\n",gphmedia.url)
-                    print("NEXT jsonRepresentation %@\n",gphmedia.jsonRepresentation)
-                    print("NEXT title %@\n",gphmedia.title)
-                    print("\n")
                 }
-                
             } else {
                 print("No Results Found")
             }
