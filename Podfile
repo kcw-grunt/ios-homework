@@ -6,7 +6,6 @@
 	def shared_pods
 	pod 'GiphyCoreSDK', '~> 1.0'
 	pod 'Gifu', '~> 3.0'
-  	pod 'SwiftyJSON', '~> 4.0'		
 	end
 
 	target 'Eaze-iOS-Homework' do

@@ -82,7 +82,22 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     
     }
     
- 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            if let cell = collectionView.cellForItem(at: indexPath) as? GiphyPhotoCell {
+                
+                let detailViewController = DetailViewController()
+                let selectedObject = self.giphyArray[indexPath.row]
+                detailViewController.selectedObject = selectedObject
+                detailViewController.largeGIPHYImageView = cell.giphyGIFView
+                detailViewController.modalTransitionStyle = .crossDissolve
+                
+                self.present(detailViewController, animated: true, completion: nil)
+                
+            } else {
+                // Error indexPath is not on screen: this should never happen.
+            }
+    }
+    
     func configureCell(cell:GiphyPhotoCell, objData:MyGiphySummaryObject) {
  
         URLSession.shared.dataTask(with: NSURL(string: objData.fixedHeightSmallStillUrl)! as URL, completionHandler: { (data, response, error) -> Void in
@@ -102,5 +117,6 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
             cell.giphyImageView.isHidden = true
         }
     }
-
+    
 }
+

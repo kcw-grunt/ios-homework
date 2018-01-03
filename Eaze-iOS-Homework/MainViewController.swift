@@ -9,7 +9,6 @@
 import UIKit
 import GiphyCoreSDK
 import Gifu
-import SwiftyJSON
 
 
 let headerInset = HWHelper.headerGivenIdiom()
@@ -23,14 +22,12 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Kerry's Giphy Picker"
-        
+        self.title = "Kerry's Giphy Finder"
         
         giphyClient = GPHClient(apiKey: "OLokyhP3KucBC7fi7SB3sZ7iyDWK8i7x")
         setupSearchController()
         setupContainerView()
         self.reachability = Reachability()
-        
     }
  
     
@@ -101,11 +98,10 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
- 
         if Reachability.isConnectedToNetwork() {
             giphyClient.search(searchBar.text!) { (response, error) in
                 if let error = error as NSError? {
-                    // Do what you want with the error
+                    self.genericAlertController(title: "Error looking for Giphys!", message: "Error: \(error.localizedDescription)")
                 }
                 if let response = response,
                     let data = response.data as? [GPHMedia],
@@ -114,12 +110,10 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
                         NotificationCenter.default.post(name: .giphySearchResultsReceived, object: nil , userInfo: ["filledArray": filledArray])
                     } else {
                     self.genericAlertController(title: "No Giphys Found!", message: "Please search later. Or, change your query")
-
                 }
             }
         } else {
             self.genericAlertController(title: "No Internet!", message: "Please connect to the Internet to get the coolest Giphys.")
-           
         }
     }
 

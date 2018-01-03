@@ -12,11 +12,15 @@ class HWHelper: NSObject {
     
     public class func headerGivenIdiom() -> CGFloat {
         if UIDevice().userInterfaceIdiom == .phone {
+            print(UIScreen.main.nativeBounds.height)
             switch UIScreen.main.nativeBounds.height {
+                
             case 1136:
                 return 64.0 //print("iPhone 5 or 5S or 5C")
             case 1334:
                 return 64.0 //print("iPhone 6/6S/7/8")
+            case 1920:
+                return 64.0 //print("My iPhone 8+")
             case 2208:
                 return 64.0 //print("iPhone 6+/6S+/7+/8+")
             case 2436:

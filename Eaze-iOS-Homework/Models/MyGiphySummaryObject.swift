@@ -13,8 +13,10 @@ class MyGiphySummaryObject {
     var url: String
     var fixedHeightSmallUrl: String  = ""
     var fixedHeightSmallStillUrl: String = ""
-    var loopingUrl: String = ""
     var originalUrl: String = ""
+    var originalHeight: Float = 0.0
+    var originalWidth: Float = 0.0
+    var originalFileSize: Int = 0
     var height: Float = 0.0
     
     init(baseUrl:String) {

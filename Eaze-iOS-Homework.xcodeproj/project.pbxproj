@@ -42,6 +42,9 @@
 		24F4F2781FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
 		24F4F2791FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
 		24F4F27A1FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
+		24F4F27D1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
+		24F4F27E1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
+		24F4F27F1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
 		26533062B577E2021CD96F2D /* Pods_Eaze_iOS_HomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFC1731BE93362383444892 /* Pods_Eaze_iOS_HomeworkUITests.framework */; };
 		6FC5F98CBF22BF58613358AB /* Pods_Eaze_iOS_HomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */; };
 		E4B84A31A4A73DC91BA1DF9F /* Pods_Eaze_iOS_Homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */; };
@@ -87,6 +90,7 @@
 		24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphySummaryObject.swift; sourceTree = "<group>"; };
 		24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helper.swift"; sourceTree = "<group>"; };
 		24F4F2771FFC4BD200D27210 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		24F4F27C1FFD510400D27210 /* CopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
 		429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
 		44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_HomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,11 +154,11 @@
 		244672211FEF09DA00CA7C88 /* Eaze-iOS-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				24F4F27B1FFD50DB00D27210 /* SubClasses */,
 				24C833601FFACEFC008641FC /* Models */,
 				244672221FEF09DA00CA7C88 /* AppDelegate.swift */,
 				24C833541FF9DC95008641FC /* MainViewController.swift */,
 				24C833481FF9D65A008641FC /* GPHCollectionViewController.swift */,
-				24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */,
 				244672501FEF28A700CA7C88 /* DetailViewController.swift */,
 				244672291FEF09DA00CA7C88 /* Assets.xcassets */,
 				2446722B1FEF09DA00CA7C88 /* LaunchScreen.storyboard */,
@@ -192,6 +196,15 @@
 				24F4F2771FFC4BD200D27210 /* Reachability.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		24F4F27B1FFD50DB00D27210 /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */,
+				24F4F27C1FFD510400D27210 /* CopyableLabel.swift */,
+			);
+			path = SubClasses;
 			sourceTree = "<group>";
 		};
 		7EC84AA66546CD294235630E /* Pods */ = {
@@ -397,13 +410,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
 				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -437,13 +448,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
 				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,13 +501,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
 				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,6 +539,7 @@
 				24F4F2701FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */,
 				24C833621FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672511FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
+				24F4F27D1FFD510400D27210 /* CopyableLabel.swift in Sources */,
 				24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				24F4F26C1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				244672231FEF09DA00CA7C88 /* AppDelegate.swift in Sources */,
@@ -550,6 +558,7 @@
 				24F4F2711FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */,
 				24C833631FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672521FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
+				24F4F27E1FFD510400D27210 /* CopyableLabel.swift in Sources */,
 				24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26D1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */,
@@ -568,6 +577,7 @@
 				24F4F2721FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */,
 				24C833641FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672531FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
+				24F4F27F1FFD510400D27210 /* CopyableLabel.swift in Sources */,
 				24C8334B1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26E1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */,

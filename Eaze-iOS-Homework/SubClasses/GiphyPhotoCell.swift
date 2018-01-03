@@ -56,7 +56,13 @@ class GiphyPhotoCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
     
     public func animate(url:String) {
-        self.giphyGIFView.animate(withGIFURL: URL.init(string: url)!)
+        print(url)
+        if !url.isEmpty {
+            self.giphyGIFView.animate(withGIFURL: URL.init(string: url)!)
+        } else {
+            
+        }
+        
     }
      
     
