@@ -9,28 +9,28 @@
 import UIKit
 import Gifu
 
-class GiphyPhotoCell: UICollectionViewCell {
+class GiphyPhotoCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
-    var titleLabel: UILabel = UILabel()
-    var giphyImageView: UIImageView = UIImageView()
-    var giphyGIFView: GIFImageView = GIFImageView()
+    var titleLabel: UILabel
+    var giphyImageView: UIImageView
+    var giphyGIFView: GIFImageView
     var giphySmallUrl:String = ""
     var image: UIImage = UIImage.init(named: "defaultCellImage")!
  
     override init(frame: CGRect) {
-        super.init(frame: frame)
         giphyImageView = UIImageView()
         giphyImageView.contentMode = .scaleAspectFit
         giphyImageView.isUserInteractionEnabled = false
         giphyImageView.image = image
-        contentView.addSubview(giphyImageView)
         
         giphyGIFView = GIFImageView()
         giphyGIFView.contentMode = .scaleAspectFit
         giphyGIFView.isUserInteractionEnabled = true
-        contentView.addSubview(giphyGIFView)
 
         titleLabel = UILabel()
+        super.init(frame: frame)
+        contentView.addSubview(giphyImageView)
+        contentView.addSubview(giphyGIFView)
         contentView.addSubview(titleLabel)
     }
     
@@ -58,6 +58,26 @@ class GiphyPhotoCell: UICollectionViewCell {
     public func animate(url:String) {
         self.giphyGIFView.animate(withGIFURL: URL.init(string: url)!)
     }
+     
+    
+//    override var isSelected: Bool{
+//        didSet{
+//            if self.isSelected
+//            {
+//                self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+//                self.contentView.backgroundColor = UIColor.red
+//              //  self.tickImageView.isHidden = false
+//            }
+//            else
+//            {
+//                self.transform = CGAffineTransform.identity
+//                self.contentView.backgroundColor = UIColor.gray
+//               // self.tickImageView.isHidden = true
+//            }
+//        }
+//    }
+    
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
