@@ -27,6 +27,9 @@
 		24C833621FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
 		24C833631FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
 		24C833641FFACF17008641FC /* HWHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C833611FFACF17008641FC /* HWHelper.swift */; };
+		24CE77C11FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
+		24CE77C21FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
+		24CE77C31FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
 		24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
 		24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
 		24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
@@ -36,9 +39,6 @@
 		24F4F2701FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
 		24F4F2711FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
 		24F4F2721FFB595400D27210 /* MyGiphySummaryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */; };
-		24F4F2741FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
-		24F4F2751FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
-		24F4F2761FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */; };
 		24F4F2781FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
 		24F4F2791FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
 		24F4F27A1FFC4BD200D27210 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2771FFC4BD200D27210 /* Reachability.swift */; };
@@ -85,10 +85,10 @@
 		24C833541FF9DC95008641FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyPhotoCell.swift; sourceTree = "<group>"; };
 		24C833611FFACF17008641FC /* HWHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWHelper.swift; sourceTree = "<group>"; };
+		24CE77C01FFED15100EA8CCA /* TogglingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglingButton.swift; sourceTree = "<group>"; };
 		24F4F2671FFB307000D27210 /* GiphyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyHelper.swift; sourceTree = "<group>"; };
 		24F4F26B1FFB4B4200D27210 /* GlobalDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefines.swift; sourceTree = "<group>"; };
 		24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphySummaryObject.swift; sourceTree = "<group>"; };
-		24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helper.swift"; sourceTree = "<group>"; };
 		24F4F2771FFC4BD200D27210 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		24F4F27C1FFD510400D27210 /* CopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
 		429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,8 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				24C833611FFACF17008641FC /* HWHelper.swift */,
-				24F4F2731FFC3B5900D27210 /* UIImageView+Helper.swift */,
-				24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */,
 				24F4F2671FFB307000D27210 /* GiphyHelper.swift */,
 				24F4F26B1FFB4B4200D27210 /* GlobalDefines.swift */,
 				24F4F2771FFC4BD200D27210 /* Reachability.swift */,
@@ -201,8 +199,10 @@
 		24F4F27B1FFD50DB00D27210 /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
+				24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */,
 				24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */,
 				24F4F27C1FFD510400D27210 /* CopyableLabel.swift */,
+				24CE77C01FFED15100EA8CCA /* TogglingButton.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -540,10 +540,10 @@
 				24C833621FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672511FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24F4F27D1FFD510400D27210 /* CopyableLabel.swift in Sources */,
+				24CE77C11FFED15100EA8CCA /* TogglingButton.swift in Sources */,
 				24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */,
 				24F4F26C1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				244672231FEF09DA00CA7C88 /* AppDelegate.swift in Sources */,
-				24F4F2741FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
 				24F4F2781FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833551FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
@@ -559,10 +559,10 @@
 				24C833631FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672521FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24F4F27E1FFD510400D27210 /* CopyableLabel.swift in Sources */,
+				24CE77C21FFED15100EA8CCA /* TogglingButton.swift in Sources */,
 				24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26D1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */,
-				24F4F2751FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
 				24F4F2791FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833561FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);
@@ -578,10 +578,10 @@
 				24C833641FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672531FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24F4F27F1FFD510400D27210 /* CopyableLabel.swift in Sources */,
+				24CE77C31FFED15100EA8CCA /* TogglingButton.swift in Sources */,
 				24C8334B1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26E1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
 				24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */,
-				24F4F2761FFC3B5900D27210 /* UIImageView+Helper.swift in Sources */,
 				24F4F27A1FFC4BD200D27210 /* Reachability.swift in Sources */,
 				24C833571FF9DC95008641FC /* MainViewController.swift in Sources */,
 			);

@@ -18,6 +18,8 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     
     var giphyCollectionView: UICollectionView!
     var giphyArray = [MyGiphySummaryObject]()
+    var filterView: UIView!
+
     fileprivate let itemsPerRow: CGFloat = 4
 
     override func viewDidLoad() {
@@ -30,6 +32,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         giphyCollectionView.delegate = self
         giphyCollectionView.register(GiphyPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.view.addSubview(giphyCollectionView)
+        
  
         NotificationCenter.default.addObserver(forName: .giphySearchResultsReceived, object: nil, queue: .main) { [weak self] (notification) in
             self?.handleGiphyDataNotification(notification: notification)
@@ -46,8 +49,12 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
     
     func handleGiphyDataNotification(notification:Notification) {
         if let data = notification.userInfo as? [String:Any], let array = data["filledArray"] as? [MyGiphySummaryObject] {
-            self.giphyArray = array
-            self.giphyCollectionView.reloadData()
+            if array.count > 5 {
+                self.giphyArray = array
+                self.giphyCollectionView.reloadData()
+            } else {
+                self.genericAlertOkController(title: "Misspalling?", message: "Your search results are sparse. A more focused search is recommneded")
+            }
         }
     }
     
@@ -94,7 +101,6 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
                 self.present(detailViewController, animated: true, completion: nil)
                 
             } else {
-                // Error indexPath is not on screen: this should never happen.
             }
     }
     
@@ -103,6 +109,7 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         URLSession.shared.dataTask(with: NSURL(string: objData.fixedHeightSmallStillUrl)! as URL, completionHandler: { (data, response, error) -> Void in
                 if error != nil {
                     print(error)
+                    self.genericAlertOkController(title: "Downloading Still Error", message: "Error getting still: \(error!.localizedDescription)")
                     return
                 }
                 DispatchQueue.main.async(execute: { () -> Void in
@@ -118,5 +125,12 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         }
     }
     
+    
+    func genericAlertOkController(title:String, message:String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
