@@ -30,6 +30,7 @@
 		24CE77C11FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
 		24CE77C21FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
 		24CE77C31FFED15100EA8CCA /* TogglingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C01FFED15100EA8CCA /* TogglingButton.swift */; };
+		24CE77C51FFF166900EA8CCA /* GiphyAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE77C41FFF166900EA8CCA /* GiphyAPITests.swift */; };
 		24F4F2681FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
 		24F4F2691FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
 		24F4F26A1FFB307000D27210 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F2671FFB307000D27210 /* GiphyHelper.swift */; };
@@ -86,6 +87,7 @@
 		24C8335C1FFA29E0008641FC /* GiphyPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyPhotoCell.swift; sourceTree = "<group>"; };
 		24C833611FFACF17008641FC /* HWHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWHelper.swift; sourceTree = "<group>"; };
 		24CE77C01FFED15100EA8CCA /* TogglingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglingButton.swift; sourceTree = "<group>"; };
+		24CE77C41FFF166900EA8CCA /* GiphyAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPITests.swift; sourceTree = "<group>"; };
 		24F4F2671FFB307000D27210 /* GiphyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyHelper.swift; sourceTree = "<group>"; };
 		24F4F26B1FFB4B4200D27210 /* GlobalDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefines.swift; sourceTree = "<group>"; };
 		24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphySummaryObject.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		244672361FEF09DB00CA7C88 /* Eaze-iOS-HomeworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				24CE77C41FFF166900EA8CCA /* GiphyAPITests.swift */,
 				244672371FEF09DB00CA7C88 /* Eaze_iOS_HomeworkTests.swift */,
 				244672391FEF09DB00CA7C88 /* Info.plist */,
 			);
@@ -559,6 +562,7 @@
 				24C833631FFACF17008641FC /* HWHelper.swift in Sources */,
 				244672521FEF28A700CA7C88 /* DetailViewController.swift in Sources */,
 				24F4F27E1FFD510400D27210 /* CopyableLabel.swift in Sources */,
+				24CE77C51FFF166900EA8CCA /* GiphyAPITests.swift in Sources */,
 				24CE77C21FFED15100EA8CCA /* TogglingButton.swift in Sources */,
 				24C8334A1FF9D65A008641FC /* GPHCollectionViewController.swift in Sources */,
 				24F4F26D1FFB4B4200D27210 /* GlobalDefines.swift in Sources */,
