@@ -37,6 +37,10 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
         NotificationCenter.default.addObserver(forName: .giphySearchResultsReceived, object: nil, queue: .main) { [weak self] (notification) in
             self?.handleGiphyDataNotification(notification: notification)
         }
+        
+        NotificationCenter.default.addObserver(forName: .clearGiphysCollectionView, object: nil, queue: .main) { [weak self] (notification) in
+            self?.handleClearGiphyDataNotification(notification: notification)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +61,12 @@ class GPHCollectionViewController: UIViewController,UICollectionViewDelegateFlow
             }
         }
     }
+    
+    func handleClearGiphyDataNotification(notification:Notification) {
+        self.giphyArray = []
+        self.giphyCollectionView.reloadData()
+    }
+    
     
     // MARK: UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -109,6 +109,9 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if Reachability.isConnectedToNetwork() {
+            
+        NotificationCenter.default.post(name: .clearGiphysCollectionView, object: nil)
+            
  
         let limitCount = searchButton.toggleArray[searchButton.toggleIncr]
             
