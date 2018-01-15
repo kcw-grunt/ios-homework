@@ -1,4 +1,4 @@
-# Eaze iOS Homework
+# Eaze iOS Homework - Kerry Washington
 
 >Our iOS code challenge for engineering applicants
 
@@ -10,3 +10,11 @@ Using the [Giphy API](https://github.com/Giphy/GiphyAPI), implement a gif search
 
 Do not use interface builder to make this app. Use Swift or Objective C, third party framerworks (masonry etc) are also allowed. Alternatively if you want to complete this project in Javascript using React Native then that is also an option. This app should work with iOS 9+.
 
+## Notes for compiling
+
+This project uses Cocoapods (v1.3.1).  
+To add project cocoapods:
+  - navigate to the downloaded project's folder
+  - verify cocoapods version: pod --version
+  - Run:  pod install
+  - Open the Eaze-iOS-Homework.xcworkspace rather than the .xcoderoj
