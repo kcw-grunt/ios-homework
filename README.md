@@ -18,7 +18,7 @@ This project uses Cocoapods (v1.3.1). Assumes Xcode is already installed and upd
 >- **sudo gem install cocoapods** (*)
 >- enter administrator password
 >- **cd /dir-where-you-want-the-project-to-reside**
->- At the prompt, type: **git clone https://github.com/kcw-grunt/ios-homework.git**
+>- **git clone https://github.com/kcw-grunt/ios-homework.git**
 >- **cd ios-homework**
 >- **pod install** (*)
 >- **open 'Eaze-iOS-Homework.xcworkspace'/**
