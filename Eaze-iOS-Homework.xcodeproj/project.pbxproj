@@ -46,9 +46,6 @@
 		24F4F27D1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
 		24F4F27E1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
 		24F4F27F1FFD510400D27210 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4F27C1FFD510400D27210 /* CopyableLabel.swift */; };
-		26533062B577E2021CD96F2D /* Pods_Eaze_iOS_HomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFC1731BE93362383444892 /* Pods_Eaze_iOS_HomeworkUITests.framework */; };
-		6FC5F98CBF22BF58613358AB /* Pods_Eaze_iOS_HomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */; };
-		E4B84A31A4A73DC91BA1DF9F /* Pods_Eaze_iOS_Homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ECD91BF5823FA66DAFF93C1 /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2446721F1FEF09DA00CA7C88 /* Eaze-iOS-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eaze-iOS-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		244672221FEF09DA00CA7C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244672291FEF09DA00CA7C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,14 +89,6 @@
 		24F4F26F1FFB595400D27210 /* MyGiphySummaryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiphySummaryObject.swift; sourceTree = "<group>"; };
 		24F4F2771FFC4BD200D27210 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		24F4F27C1FFD510400D27210 /* CopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
-		429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.debug.xcconfig"; sourceTree = "<group>"; };
-		44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_HomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95E14FE9C31837B5B3D05569 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C6D9059651CB0761D622DBF2 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
-		D6CE3F99D94085D41B8B79B4 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-HomeworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F36331DCC5734D1224101D6F /* Pods-Eaze-iOS-Homework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze-iOS-Homework.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework.release.xcconfig"; sourceTree = "<group>"; };
-		FBFC1731BE93362383444892 /* Pods_Eaze_iOS_HomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze_iOS_HomeworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B84A31A4A73DC91BA1DF9F /* Pods_Eaze_iOS_Homework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC5F98CBF22BF58613358AB /* Pods_Eaze_iOS_HomeworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26533062B577E2021CD96F2D /* Pods_Eaze_iOS_HomeworkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +123,6 @@
 				244672361FEF09DB00CA7C88 /* Eaze-iOS-HomeworkTests */,
 				244672411FEF09DB00CA7C88 /* Eaze-iOS-HomeworkUITests */,
 				244672201FEF09DA00CA7C88 /* Products */,
-				7EC84AA66546CD294235630E /* Pods */,
-				DB5549C29F6CD564AA5E1E49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,29 +193,6 @@
 			path = SubClasses;
 			sourceTree = "<group>";
 		};
-		7EC84AA66546CD294235630E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */,
-				F36331DCC5734D1224101D6F /* Pods-Eaze-iOS-Homework.release.xcconfig */,
-				D6CE3F99D94085D41B8B79B4 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */,
-				C6D9059651CB0761D622DBF2 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */,
-				1ECD91BF5823FA66DAFF93C1 /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */,
-				95E14FE9C31837B5B3D05569 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DB5549C29F6CD564AA5E1E49 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				44E051D596CD058BE51DAE56 /* Pods_Eaze_iOS_Homework.framework */,
-				72D662516922C9C18492ED9E /* Pods_Eaze_iOS_HomeworkTests.framework */,
-				FBFC1731BE93362383444892 /* Pods_Eaze_iOS_HomeworkUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,12 +200,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244672471FEF09DB00CA7C88 /* Build configuration list for PBXNativeTarget "Eaze-iOS-Homework" */;
 			buildPhases = (
-				4A9B7599954E04CFD6E347E8 /* [CP] Check Pods Manifest.lock */,
 				2446721B1FEF09DA00CA7C88 /* Sources */,
 				2446721C1FEF09DA00CA7C88 /* Frameworks */,
 				2446721D1FEF09DA00CA7C88 /* Resources */,
-				E5181403381365E864C28542 /* [CP] Embed Pods Frameworks */,
-				EE4C7A6E315E72770DEF3043 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,12 +217,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2446724A1FEF09DB00CA7C88 /* Build configuration list for PBXNativeTarget "Eaze-iOS-HomeworkTests" */;
 			buildPhases = (
-				B9D0C139FF282ABAAD69DE03 /* [CP] Check Pods Manifest.lock */,
 				2446722F1FEF09DB00CA7C88 /* Sources */,
 				244672301FEF09DB00CA7C88 /* Frameworks */,
 				244672311FEF09DB00CA7C88 /* Resources */,
-				29C7FDF3186A25B485EF3FE3 /* [CP] Embed Pods Frameworks */,
-				D39ADD6F9B0B50C80A507E78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,12 +235,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2446724D1FEF09DB00CA7C88 /* Build configuration list for PBXNativeTarget "Eaze-iOS-HomeworkUITests" */;
 			buildPhases = (
-				29205E8ED5B12E06D4529309 /* [CP] Check Pods Manifest.lock */,
 				2446723A1FEF09DB00CA7C88 /* Sources */,
 				2446723B1FEF09DB00CA7C88 /* Frameworks */,
 				2446723C1FEF09DB00CA7C88 /* Resources */,
-				7A742B0212B0F177045F2FEC /* [CP] Embed Pods Frameworks */,
-				0F2586AE0B89795CF566C9E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,168 +320,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0F2586AE0B89795CF566C9E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29205E8ED5B12E06D4529309 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eaze-iOS-HomeworkUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29C7FDF3186A25B485EF3FE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
-				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A9B7599954E04CFD6E347E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eaze-iOS-Homework-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A742B0212B0F177045F2FEC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
-				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkUITests/Pods-Eaze-iOS-HomeworkUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9D0C139FF282ABAAD69DE03 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eaze-iOS-HomeworkTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D39ADD6F9B0B50C80A507E78 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-HomeworkTests/Pods-Eaze-iOS-HomeworkTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5181403381365E864C28542 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
-				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE4C7A6E315E72770DEF3043 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eaze-iOS-Homework/Pods-Eaze-iOS-Homework-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2446721B1FEF09DA00CA7C88 /* Sources */ = {
@@ -727,7 +516,6 @@
 		};
 		244672481FEF09DB00CA7C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 429A5D78EC10653FE1418E7F /* Pods-Eaze-iOS-Homework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -743,7 +531,6 @@
 		};
 		244672491FEF09DB00CA7C88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F36331DCC5734D1224101D6F /* Pods-Eaze-iOS-Homework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -759,7 +546,6 @@
 		};
 		2446724B1FEF09DB00CA7C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6CE3F99D94085D41B8B79B4 /* Pods-Eaze-iOS-HomeworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -777,7 +563,6 @@
 		};
 		2446724C1FEF09DB00CA7C88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6D9059651CB0761D622DBF2 /* Pods-Eaze-iOS-HomeworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -795,7 +580,6 @@
 		};
 		2446724E1FEF09DB00CA7C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ECD91BF5823FA66DAFF93C1 /* Pods-Eaze-iOS-HomeworkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -812,7 +596,6 @@
 		};
 		2446724F1FEF09DB00CA7C88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95E14FE9C31837B5B3D05569 /* Pods-Eaze-iOS-HomeworkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
