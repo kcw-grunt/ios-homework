@@ -15,10 +15,10 @@ Do not use interface builder to make this app. Use Swift or Objective C, third p
 This project uses Cocoapods (v1.3.1). Assumes Xcode is already installed and updated.
 
 - open Terminal 
-- sudo gem install cocoapods (*)
+- **sudo gem install cocoapods** (*)
 - enter administrator password
-- cd /dir-where-you-want-the-project-to-reside
-- At the prompt, type: git clone https://github.com/kcw-grunt/ios-homework.git
-- cd ios-homework
-- pod install (*)
-- open 'Eaze-iOS-Homework.xcworkspace'/
+- **cd /dir-where-you-want-the-project-to-reside**
+- At the prompt, type: **git clone https://github.com/kcw-grunt/ios-homework.git**
+- **cd ios-homework**
+- **pod install** (*)
+- **open 'Eaze-iOS-Homework.xcworkspace'/**
