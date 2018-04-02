@@ -24,6 +24,7 @@ class GiphyHelper {
     class func parseGiphyMedia(object: GPHJSONObject) -> MyGiphySummaryObject {
         
         var  filledObject = MyGiphySummaryObject(baseUrl:"NOURL")
+        
         if let url = object["url"] as? String,
             let title = object["title"] as? String,
             let images = object["images"] as? [String:Any],
