@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 extension Notification.Name {
     static let giphySearchResultsReceived = Notification.Name("ReceivedGiphys")
     static let clearGiphysCollectionView = Notification.Name("ClearCollectionsView")
